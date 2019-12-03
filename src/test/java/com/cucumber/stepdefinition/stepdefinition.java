@@ -1,5 +1,6 @@
 package com.cucumber.stepdefinition;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -14,8 +15,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.cucumber.testrunner.testrunner;
-
+import com.cucumber.listener.Reporter;
+import com.cucumber.testrunner.TestRunner;
 import BassClass.BaseClass;
 import Helper.ConfigReader;
 import Helper.PageObjectHelper;
@@ -28,8 +29,8 @@ import POM.SelectHotel;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class stepdefinition extends BaseClass {
-	public static WebDriver driver=testrunner.driver;
+public class StepDefinition extends BaseClass {
+	public static WebDriver driver=TestRunner.driver;
 	public static PageObjectHelper poh= new PageObjectHelper(driver);
 	
 	@When("^Launch hotel reservation application using URL as in test data$")
@@ -88,7 +89,7 @@ public class stepdefinition extends BaseClass {
 	public void verify_that_system_gives_an_error_saying_check_in_date_should_not_be_later_than_check_out_date()
 			throws Throwable {
 		SearchHotel sh = new SearchHotel(driver);
-		Assert.assertEquals("Check-Out Date shall be after than Check-In Date", getElementText(sh.getRegError()));
+		Assert.assertEquals("Check-Out Date shall be before than Check-In Date", getElementText(sh.getRegError()));
 		System.out.println("Verified succesfully");
 	}
 
@@ -115,7 +116,8 @@ public class stepdefinition extends BaseClass {
 	public void click_on_Search_button() throws Throwable {
 		SearchHotel sh = new SearchHotel(driver);
 		singleClick(sh.getSearchButton());
-
+		File screenShot = takesScreenShot("click_on_Search_button");
+		Reporter.addScreenCaptureFromPath(screenShot.getAbsolutePath());
 	}
 
 	@Then("^Verify that hotel \"([^\"]*)\" displayed is the same as selected in search Hotel form$")

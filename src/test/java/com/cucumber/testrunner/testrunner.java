@@ -22,10 +22,10 @@ import cucumber.api.junit.Cucumber;
 		
 		,features="src\\test\\java\\com\\cucumber\\feature",glue="com.cucumber.stepdefinition"
 	,monochrome=true
-	,tags= {"@TC_117"}
+	,tags= {"@TC_102"}
 //	,dryRun=false,strict=true
 				)
-public class testrunner extends BaseClass {
+public class TestRunner extends BaseClass {
 	
 @BeforeClass
 public static void browserLaunch() throws Exception {

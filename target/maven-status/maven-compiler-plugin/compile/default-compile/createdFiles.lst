@@ -1,0 +1,9 @@
+POM\BookingConfirmation.class
+Helper\ConfigReader.class
+POM\BookAHotel.class
+Helper\PageObjectHelper.class
+POM\HomePage.class
+POM\SearchHotel.class
+POM\SelectHotel.class
+POM\OrderHistory.class
+BassClass\BaseClass.class

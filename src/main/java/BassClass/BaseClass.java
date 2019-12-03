@@ -159,12 +159,13 @@ public class BaseClass {
 		js.executeScript("window.scrollTO(0,-document.body.scrollHeight)", element);
 	}
 
-	public static void takesScreenShot(String fileName) throws IOException {
+	public static File takesScreenShot(String fileName) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File sourceFile = ts.getScreenshotAs(OutputType.FILE);
 		File descFile = new File(
 				System.getProperty("User.dir") + "\\src\\test\\resoucres\\ScreenShots\\" + fileName + ".png");
 		FileUtils.copyFile(sourceFile, descFile);
+		return descFile;
 	}
 
 	public static void singleDropDown(WebElement element, String options,String value) {
