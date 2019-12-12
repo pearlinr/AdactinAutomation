@@ -6,6 +6,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
+import com.aventstack.extentreports.ExtentReports;
 import com.cucumber.listener.Reporter;
 
 import BassClass.BaseClass;
@@ -15,14 +16,15 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin= {"com.cucumber.listener.ExtentCucumberFormatter:src\\test\\resource\\com\\cucumber\\reoprts\\ExtentReport\\extent.html"}
+		plugin= {"com.cucumber.listener.ExtentCucumberFormatter:src\\test\\resource\\com\\cucumber\\reoprts\\ExtentReport\\extent.html"
 		//		,"json:src\\test\\resource\\com\\cucumber\\reports\\report.json"
 		//		,"junit:src\\test\\resource\\com\\cucumber\\reports"
-		//		,"html:src\\test\\resource\\com\\cucumber\\reports"} ,
+		//		,"html:src\\test\\resource\\com\\cucumber\\reports"
+				} 
 		
 		,features="src\\test\\java\\com\\cucumber\\feature",glue="com.cucumber.stepdefinition"
 	,monochrome=true
-	,tags= {"@TC_102"}
+	,tags= {"@TC_117"}
 //	,dryRun=false,strict=true
 				)
 public class TestRunner extends BaseClass {

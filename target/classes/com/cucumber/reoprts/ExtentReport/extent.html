@@ -4,7 +4,7 @@
 
 
 <head>
-	<meta charset='utf-8' /> 
+	<meta charset='UTF-8' /> 
 	<meta name='description' content='' />
 	<meta name='robots' content='noodp, noydir' />
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -15,7 +15,7 @@
 
 		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/6d3843c29c354373fafad29c03a1a89b7e06c374/dist/css/extent.css' type='text/css' rel='stylesheet' />
 	
-	<title>ExtentReports</title>
+	<title>ExtentReports 2.0</title>
 
 </head>
 
@@ -32,12 +32,11 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
-		<span class='report-name'>ExtentReports</span>
+		<span class='report-name'></span>
 		
 		<!-- report headline -->
 		<span class='report-headline'></span>
@@ -46,7 +45,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 28, 2019 11:21:37 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Dec 8, 2019 01:35:37 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,7 +71,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -85,7 +83,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@TC_102</a></li>
+					<li><a href='#'>@TC_117</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -133,10 +131,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -148,10 +146,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -163,10 +161,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='88.889%'><span class='strong'>8</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='11.111%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -180,21 +178,21 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Sample Test Cases for Automation for AdactIn Hotel Application</span>
-						<span class='test-time'>Nov 28, 2019 11:21:37 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Dec 8, 2019 01:35:37 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label white-text'>@TC_102</span>
+		<span class='category label white-text'>@TC_117</span>
 	</div>
-	<span class='duration right label'>0h 0m 20s+656ms</span>
+	<span class='duration right label'>0h 0m 9s+186ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">To verify whether the check-out date field accepts a later date than checkin date.</span>
+		<span class="desc-text">To verify whether locations in Select Hotel page are displayed according to the location selected in Search Hotel</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -217,7 +215,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And Select location "Sydney" as in test data</span>
+			<span class="bdd-step-name">And Click on booked itinerary button</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -225,59 +223,16 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And Select hotel "Hotel Creek" as in test data</span>
+			<span class="bdd-step-name">And Enter the order id</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And Select room type "Standard" as in test data</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='8' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And Select no-of-rooms "2" as in test data</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='9' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And Enter check-in-date "26/11/2019" later than the checkout-date "21/11/2019" field as in test data</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='10' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And Click on Search button</span>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="C:\Users\admin\eclipse-workspace2\Adactin\null\src\test\resoucres\ScreenShots\click_on_Search_button.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='11' class='node then fail' status='fail'>
+		<li test-id='7' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Verify that system gives an error saying ‘check-in-date should not be later than check-out-date’</span>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="C:\Users\admin\eclipse-workspace2\Adactin\null\src\test\resoucres\ScreenShots\To verify whether the check-out date field accepts a later date than checkin date..png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-				<div class='pre'><textarea>org.junit.ComparisonFailure: expected:<[Check-Out Date shall be before than Check-In Date]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.cucumber.stepdefinition.StepDefinition.verify_that_system_gives_an_error_saying_check_in_date_should_not_be_later_than_check_out_date(StepDefinition.java:92)
-	at ?.Then Verify that system gives an error saying ‘check-in-date should not be later than check-out-date’(Adactin.feature:18)
-</textarea></div>
+			<span class="bdd-step-name">Then Verify that the relevant details are displayed</span>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -336,15 +291,15 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@TC_102</span>
+						<span class='category-name'>@TC_117</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -359,9 +314,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 28, 2019 11:21:37 AM</td>
-										<td class='linked' test-id='2'>Sample Test Cases for Automation for AdactIn Hotel Application.To verify whether the check-out date field accepts a later date than checkin date.</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Dec 8, 2019 01:35:37 PM</td>
+										<td class='linked' test-id='2'>Sample Test Cases for Automation for AdactIn Hotel Application.To verify whether locations in Select Hotel page are displayed according to the location selected in Search Hotel</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -380,72 +335,6 @@
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.junit.ComparisonFailure</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Nov 28, 2019 11:21:58 AM</td>
-                                                        <td class='linked' test-id='11'>Sample Test Cases for Automation for AdactIn Hotel Application.To verify whether the check-out date field accepts a later date than checkin date..Then Verify that system gives an error saying ‘check-in-date should not be later than check-out-date’</td>
-                                                        <td><pre><textarea>org.junit.ComparisonFailure: expected:<[Check-Out Date shall be before than Check-In Date]> but was:<[]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.cucumber.stepdefinition.StepDefinition.verify_that_system_gives_an_error_saying_check_in_date_should_not_be_later_than_check_out_date(StepDefinition.java:92)
-	at ?.Then Verify that system gives an error saying ‘check-in-date should not be later than check-out-date’(Adactin.feature:18)
-</textarea></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -467,25 +356,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 28, 2019 11:21:37 AM</div>
+					<div class='panel-lead'>Dec 8, 2019 01:35:37 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 28, 2019 11:22:00 AM</div>
+			 		<div class='panel-lead'>Dec 8, 2019 01:35:48 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>22,630ms</div>
+					<div class='panel-lead'>10,502ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -500,9 +389,9 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>@TC_102</td>
-							<td>0</td>
+							<td>@TC_117</td>
 							<td>1</td>
+							<td>0</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -518,31 +407,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				
-				passGrandChild: 8,
-				failGrandChild: 1,
+				passGrandChild: 5,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		

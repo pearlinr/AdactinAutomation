@@ -89,7 +89,7 @@ public class StepDefinition extends BaseClass {
 	public void verify_that_system_gives_an_error_saying_check_in_date_should_not_be_later_than_check_out_date()
 			throws Throwable {
 		SearchHotel sh = new SearchHotel(driver);
-		Assert.assertEquals("Check-Out Date shall be before than Check-In Date", getElementText(sh.getRegError()));
+		Assert.assertEquals("Check-Out Date shall be after than Check-In Date", getElementText(sh.getRegError()));
 		System.out.println("Verified succesfully");
 	}
 
